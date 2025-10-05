@@ -7,12 +7,25 @@
         <link rel="stylesheet" href="styles.css">
         <title>PIXL</title>
     </head>
-    <body class="p-2 bg-pixl-dark text-pixl-light">
-        <h1>Hello PIXL</h1>
-        <div class="flex gap-2 mt-2">
-            <div class="size-8 bg-pixl"></div>
-            <div class="size-8 bg-pixl-light"></div>
-            <div class="size-8 bg-pixl-dark"></div>
+    <body class="bg-pixl-dark text-pixl-light h-dvh w-full overflow-clip relative">
+        <div class="absolute inset-0 overflow-clip">
+            <img
+                    src="/images/Official-Login-BG.png"
+                    alt="Background"
+                    class="absolute inset-y-0 left-[15%] w-full h-full object-cover mask-1-from-80%  opacity-30"
+            />
         </div>
+        <footer class="fixed bottom-0 inset-x-0 pb-3">
+            <div class="flex flex-col gap-1.5 items-center text-pixl p-4">
+                <p>All Rights Reserved. Pixl Media For Everyone*</p>
+                <p class="opacity-50 text-xs">*except for badgers, they're $&@*holes.</p>
+            </div>
+            <!-- white-noise band (repeating GIF) -->
+            <div
+                    class="absolute bottom-0 inset-x-0 h-4 bg-repeat"
+                    style="background-image: url('/images/white-noise.gif'); background-repeat: repeat;"
+                    aria-hidden="true"
+            ></div>
+        </footer>
     </body>
 </html>
